@@ -5,15 +5,28 @@
   
 
   
-  <title>Hexo</title>
+  <title>机器学习笔记（1）——感知机 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="机器学习笔记（1）——感知机 感知机模型  感知机的学习策略数据集​    需要注意的是，感知机需要数据集是线性可分的。 损失函数​    因为误分类点的总数不是对$w,b$可导的，所以选择误分类点到超平面的总距离 ​    空间$R^n$中任一点$x_0$到超平面$S$的距离为：$$\frac{1}{||w||}|w*x_0+b|$$​    我们把$||w||$当作是w的模长就好（$L_2$范">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习笔记（1）——感知机">
+<meta property="og:url" content="http://yoursite.com/2020/05/21/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E6%84%9F%E7%9F%A5%E6%9C%BA/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="机器学习笔记（1）——感知机 感知机模型  感知机的学习策略数据集​    需要注意的是，感知机需要数据集是线性可分的。 损失函数​    因为误分类点的总数不是对$w,b$可导的，所以选择误分类点到超平面的总距离 ​    空间$R^n$中任一点$x_0$到超平面$S$的距离为：$$\frac{1}{||w||}|w*x_0+b|$$​    我们把$||w||$当作是w的模长就好（$L_2$范">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227214235039.png">
+<meta property="og:image" content="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227214205676.png">
+<meta property="og:image" content="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227212412658.png">
+<meta property="og:image" content="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227211826580.png">
+<meta property="og:image" content="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227213043550.png">
+<meta property="og:image" content="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227212748589.png">
+<meta property="og:image" content="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227211840949.png">
+<meta property="og:image" content="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227212334899.png">
+<meta property="article:published_time" content="2020-05-21T03:17:28.838Z">
+<meta property="article:modified_time" content="2020-05-21T03:17:18.874Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227214235039.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,9 +75,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-机器学习笔记（1）——感知机" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-机器学习笔记（1）——感知机" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/05/21/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E6%84%9F%E7%9F%A5%E6%9C%BA/" class="article-date">
   <time datetime="2020-05-21T03:17:28.838Z" itemprop="datePublished">2020-05-21</time>
@@ -77,8 +88,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E6%84%9F%E7%9F%A5%E6%9C%BA/">机器学习笔记（1）——感知机</a>
+    <h1 class="article-title" itemprop="name">
+      机器学习笔记（1）——感知机
     </h1>
   
 
@@ -151,96 +162,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-My-First-Post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/05/21/My-First-Post/" class="article-date">
-  <time datetime="2020-05-21T02:54:45.000Z" itemprop="datePublished">2020-05-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/My-First-Post/">My First Post</a>
-    </h1>
+    <a href="/2020/05/21/My-First-Post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">My First Post</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/05/21/My-First-Post/" data-id="ckag71e4b0000ao8s5wbfg4u4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/05/21/hello-world/" class="article-date">
-  <time datetime="2020-05-21T02:52:24.080Z" itemprop="datePublished">2020-05-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/05/21/hello-world/" data-id="ckag71e4h0001ao8s1nnzcmxk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
