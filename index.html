@@ -299,8 +299,7 @@
       
         
           
-            <h1 id="机器学习笔记（1）——感知机"><a href="#机器学习笔记（1）——感知机" class="headerlink" title="机器学习笔记（1）——感知机"></a>机器学习笔记（1）——感知机</h1><hr>
-<h2 id="感知机模型"><a href="#感知机模型" class="headerlink" title="感知机模型"></a>感知机模型</h2><p><img src="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227214235039.png" alt="image-20200227214205676"></p>
+            <h2 id="感知机模型"><a href="#感知机模型" class="headerlink" title="感知机模型"></a>感知机模型</h2><p><img src="https://kw-20200521.oss-cn-beijing.aliyuncs.com/img/image-20200227214235039.png" alt="image-20200227214205676"></p>
 <hr>
 <h2 id="感知机的学习策略"><a href="#感知机的学习策略" class="headerlink" title="感知机的学习策略"></a>感知机的学习策略</h2><h3 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h3><p>​    需要注意的是，感知机需要<strong>数据集是线性可分</strong>的。</p>
 <h3 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h3><p>​    因为误分类点的总数不是对$w,b$可导的，所以选择误分类点到超平面的总距离</p>
@@ -962,6 +961,28 @@ G=[x_i\cdot x_j]_{N\times N}</script><p>​    需要注意的是，在做题目
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
